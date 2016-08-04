@@ -90,6 +90,17 @@
         <header-file src="src/ios/CDVGlobalization.h" />
         <source-file src="src/ios/CDVGlobalization.m" />
     </platform>
+   
+   <!-- osx -->
+   <platform name="osx">
+       <config-file target="config.xml" parent="/*">
+           <feature name="Globalization">
+               <param name="ios-package" value="CDVGlobalization" />
+           </feature>
+       </config-file>
+       <header-file src="src/osx/CDVGlobalization.h" />
+       <source-file src="src/osx/CDVGlobalization.m" />
+   </platform>
 
     <!-- wp7 -->
     <platform name="wp7">
